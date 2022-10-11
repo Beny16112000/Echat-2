@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit Room</title>
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    <form method="post">
+        <label>Room name</label>
+        <input type="text" name="room_name" value="{{ room.name }}">
+        <br>
+        <label>Members</label>
+        <input type="text" name="members" value="{{ room_members_str }}">
+        <br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
